@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Breadcrumb</string>
+
+    <string name="step1">Step 1</string>
+    <string name="step2">Step 2</string>
+    <string name="step3">Step 3</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="your_breadcrumb_order_is">The position of your breadcrumb is %d</string>
+</resources>

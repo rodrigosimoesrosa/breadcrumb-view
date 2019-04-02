@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BreadcrumbView">
+        <attr name="breadcrumbClickableItems" format="boolean"/>
+        <attr name="breadcrumbSkipNext" format="boolean"/>
+        <attr name="breadcrumbItemAnimation" format="boolean"/>
+        <attr name="breadcrumbCheckAnimation" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="BreadcrumbItemView">
+        <attr name="breadcrumbItemImageEnable" format="reference"/>
+        <attr name="breadcrumbItemImageDisable" format="reference"/>
+        <attr name="breadcrumbItemState" format="boolean"/>
+        <attr name="breadcrumbItemImageBackgroundDisable" format="reference"/>
+        <attr name="breadcrumbItemImageBackgroundEnable" format="reference"/>
+        <attr name="breadcrumbItemLabel" format="reference|string" localization="suggested"/>
+        <attr name="breadcrumbItemImageScaleDisable" format="float"/>
+        <attr name="breadcrumbItemImageScaleEnable" format="float"/>
+        <attr name="breadcrumbItemOrder" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="BreadcrumbCheckView">
+        <attr name="breadcrumbCheckImage" format="reference"/>
+        <attr name="breadcrumbCheckOrder" format="integer"/>
+        <attr name="breadcrumbCheckState" format="boolean"/>
+    </declare-styleable>
+</resources>
