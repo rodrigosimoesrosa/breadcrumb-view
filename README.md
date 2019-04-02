@@ -1,6 +1,8 @@
 # Breadcrumb View
 The main purpose of this repository is to implement Breadcrumb view:
 
+<img src="https://github.com/rodrigosimoesrosa/breadcrumb-view/blob/master/images/breadcrumb.jpg" alt="drawing" width="50%"/>
+
 ## Methods
 `previous()` -> This method activate previous breadcrumb item.
 
