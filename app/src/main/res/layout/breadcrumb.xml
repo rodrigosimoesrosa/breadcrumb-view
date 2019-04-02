@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ResAuto">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/breadcrumb_disable"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mirabilis.breadcrumb.implementation.BreadcrumbItemView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:breadcrumbItemImageBackgroundDisable="@drawable/breadcrumb_disable"
+        custom:breadcrumbItemImageBackgroundEnable="@drawable/breadcrumb_enable"
+        custom:breadcrumbItemImageDisable="@drawable/ic_android_disable"
+        custom:breadcrumbItemImageEnable="@drawable/ic_android_enable"
+        custom:breadcrumbItemImageScaleDisable=".8"
+        custom:breadcrumbItemLabel="@string/step1"
+        custom:breadcrumbItemOrder="0"
+        custom:breadcrumbItemState="true"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mirabilis.breadcrumb.implementation.BreadcrumbCheckView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        custom:breadcrumbCheckImage="@drawable/ic_check"
+        custom:breadcrumbCheckState="false"
+        custom:breadcrumbCheckOrder="1"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toStartOf="@+id/second"
+        custom:layout_constraintStart_toEndOf="@+id/first"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mirabilis.breadcrumb.implementation.BreadcrumbItemView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:breadcrumbItemImageBackgroundDisable="@drawable/breadcrumb_disable"
+        custom:breadcrumbItemImageBackgroundEnable="@drawable/breadcrumb_enable"
+        custom:breadcrumbItemImageDisable="@drawable/ic_android_disable"
+        custom:breadcrumbItemImageEnable="@drawable/ic_android_enable"
+        custom:breadcrumbItemImageScaleDisable=".8"
+        custom:breadcrumbItemLabel="@string/step2"
+        custom:breadcrumbItemOrder="1"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toStartOf="@+id/third"
+        custom:layout_constraintStart_toEndOf="@+id/first"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:breadcrumbItemState="false" />
+
+    <br.com.mirabilis.breadcrumb.implementation.BreadcrumbCheckView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        custom:breadcrumbCheckImage="@drawable/ic_check"
+        custom:breadcrumbCheckState="false"
+        custom:breadcrumbCheckOrder="2"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toStartOf="@+id/third"
+        custom:layout_constraintStart_toEndOf="@+id/second"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mirabilis.breadcrumb.implementation.BreadcrumbItemView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:breadcrumbItemImageBackgroundDisable="@drawable/breadcrumb_disable"
+        custom:breadcrumbItemImageBackgroundEnable="@drawable/breadcrumb_enable"
+        custom:breadcrumbItemImageDisable="@drawable/ic_android_disable"
+        custom:breadcrumbItemImageEnable="@drawable/ic_android_enable"
+        custom:breadcrumbItemImageScaleDisable=".8"
+        custom:breadcrumbItemLabel="@string/step3"
+        custom:breadcrumbItemOrder="2"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:breadcrumbItemState="false" />
+
+</android.support.constraint.ConstraintLayout>
